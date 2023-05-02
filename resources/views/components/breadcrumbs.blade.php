@@ -37,10 +37,10 @@
                             <ul class="breadcrumb ps-lg-0-25">
                                 @foreach ($site->getBreadCrumbs() as $bread)
                                     @if ($loop->last)
-                                        <li class="breadcrumb-item active" aria-current="{{ $bread->getText() }}">{{ $bread->getText() }}</li>
+                                        <li class="breadcrumb-item active text-secondary" aria-current="{{ $bread->getText() }}">{{ $bread->getText() }}</li>
                                     @else
                                         <li class="breadcrumb-item">
-                                            <a href="{{ $bread->getUrl() }}">{{ $bread->getText() }}</a>
+                                            <a class="text-secondary" href="{{ $bread->getUrl() }}">{{ $bread->getText() }}</a>
                                         </li>
                                     @endif
                                 @endforeach

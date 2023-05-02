@@ -9,7 +9,7 @@
                    <div class="row">
                      
                     <div class="col-lg-7 d-flex justify-content-center align-items-center">
-                        <div class="editor-texto text-center text-lg-start p-lg-4 py-2 py-sm-0 px-sm-0 p-sm-2">
+                        <div class="editor-texto text-center text-lg-start py-2 py-lg-4 pe-lg-2 pe-xxl-4">
                             <p class="p-16 p-400">
                                 O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas 
                                 indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, 
@@ -36,7 +36,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 d-flex justify-content-end align-items-center">
-                        <h2 class="h2 p-400 text-white w-100 text-lg-start text-center">
+                        <h2 class="h2 p-400 text-white w-100 text-lg-start text-center w-100 d-flex justify-content-center ps-lg-6">
                             Nossa <br> cultura
                         </h2>
                     </div>
