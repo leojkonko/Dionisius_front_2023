@@ -19,6 +19,13 @@ html {
     & .rotate {
         animation: spin 10s linear infinite;
 
+        @media(max-width: 450px) {
+            width: 300px;
+        }
+
+        @media(min-width: 1500px) {
+            width: 360px;
+        }
 
         @keyframes spin {
             0% {

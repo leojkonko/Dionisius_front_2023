@@ -39,7 +39,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 d-flex justify-content-center align-items-center d-none d-lg-block">
+            <div class="col-lg-4 d-flex justify-content-center align-items-center d-none d-lg-flex">
                 <a href="{{ route_lang('home') }}" class="d-block logo m-auto m-lg-0">
                     <img class="object-fit-contain w-100 h-100" src="{{ asset('front/images/logos/logo.png') }}" title="Página principal" alt="Logo {{ env('APP_NAME') }}">
                 </a>

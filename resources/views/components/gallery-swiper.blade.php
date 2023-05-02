@@ -6,7 +6,7 @@
 <div class="gallery-swiper overflow-hidden">
     <div class="swiper-wrapper">
 
-        @if ($video)
+        <!--@if ($video)
             <a href="{{ $video }}" data-fancybox="gallery" class="d-block video-slide swiper-slide">
                 @if ($thumbnail)
                     <img class="w-100 h-100 object-fit-cover" data-src="{{ $thumbnail->url() }}"alt="{{ $thumbnail->alt }}" title="{{ $thumbnail->description }}">
@@ -24,7 +24,7 @@
                     </svg>
                 </div>
             </a>
-        @endif
+        @endif-->
 @foreach (range(0,5) as $item)
             <a href="#" data-fancybox="gallery" class="d-block swiper-slide">
                 <div class="ratio ratio-15x1">
