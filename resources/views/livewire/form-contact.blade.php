@@ -13,7 +13,7 @@
         <textarea id="" Placeholder="Mensagem*" class="form-control p-400 p-16" rows="5" wire:model.defer="message" required></textarea>
     </div>
     <div class="col-12 d-flex justify-content-center">
-        <div class="form-check">
+        <div class="form-check pt-1">
             <input class="form-check-input" type="checkbox" value="1" wire:model.defer="accept" id="termosCheck" required>
             <label class="form-check-label" for="termosCheck">
                 <x-accept-text />
@@ -21,7 +21,7 @@
         </div>
     </div>
     <div class="col-12 d-flex justify-content-center">
-        <button type="submit" class="btn btn-outline-warning text-dark">
+        <button type="submit" class="btn btn-outline-warning text-dark rounded-20 mt-1">
             <span wire:loading.remove>
                 Enviar contato
             </span>

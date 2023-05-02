@@ -16,7 +16,7 @@
                 </div>
             </div>
         </section>
-        <section class="pt-lg-4 pt-3 overflow-hidden">
+        <section class="pt-lg-4 pt-3 espaco-footer overflow-hidden">
             <div class="container">
                 <div class="row gx-0 gx-sm-2">
                     @php
@@ -29,12 +29,12 @@
                             @endphp
                             <a href="{{ asset("front/images/backgrounds/empresa-swiper.png") }}" data-fancybox="gallery">
                                 <div class="ratio ratio-15x1 my-sm-1">
-                                    <img class="w-100 h-100 object-fit-cover rounded-sm-20" src="{{ asset("front/images/backgrounds/empresa-swiper.png") }}" alt="">
+                                    <img class="w-100 h-100 object-fit-cover rounded-20 box-shadow" src="{{ asset("front/images/backgrounds/empresa-swiper.png") }}" alt="">
                                 </div>
                             </a>
                         </div>
                     @endforeach
-                    <div class="col-lg-4 col-6 rounded-20 ">
+                    <div class="col-lg-4 col-6 rounded-20">
                         <div class="ratio ratio-15x1 my-sm-1 mais-img" data-fancybox="gallery">
                                 <div class=" w-100 h-100 z-index-1 ">
                                     <a href="{{ asset("front/images/backgrounds/empresa-swiper.png") }}" data-fancybox="gallery" class="w-100 h-100  text-decoration-none position-absolute">
@@ -43,7 +43,7 @@
                                         </p>
                                     </a>
                                 </div>
-                            <img class="w-100 h-100 object-fit-cover rounded-sm-20" src="{{ asset("front/images/backgrounds/empresa-swiper.png") }}" alt="">
+                            <img class="w-100 h-100 object-fit-cover rounded-20 box-shadow" src="{{ asset("front/images/backgrounds/empresa-swiper.png") }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -331,8 +331,6 @@
                     </svg>
                     
         
-        
-                    <section class="espaco-footer"></section>
                 </section>
 
         <!--

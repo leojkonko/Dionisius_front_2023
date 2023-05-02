@@ -3,7 +3,7 @@
     $video = $video ?? false;
 @endphp
 
-<div class="gallery-swiper overflow-hidden">
+<div class="gallery-swiper overflow-hidden pm-1">
     <div class="swiper-wrapper">
 
         <!--@if ($video)
@@ -28,7 +28,7 @@
 @foreach (range(0,5) as $item)
             <a href="#" data-fancybox="gallery" class="d-block swiper-slide">
                 <div class="ratio ratio-15x1">
-                    <img class="w-100 h-100 object-fit-cover rounded-20" src="{{ asset("front/images/backgrounds/empresa-swiper.png") }}" alt="">
+                    <img class="w-100 h-100 object-fit-cover rounded-20 box-shadow" src="{{ asset("front/images/backgrounds/empresa-swiper.png") }}" alt="">
                 </div>
                 <!--<div class="loader position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center">
                     <div class="spinner-border fs-4 text-secondary"></div>

@@ -99,3 +99,12 @@ main {
     height: 30px;
     width: 30px;
 }
+
+.box-shadow {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pm-1 {
+    padding: 1rem;
+    margin: -1rem;
+}

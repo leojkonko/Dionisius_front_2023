@@ -94,7 +94,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="ratio ratio-21x9">
-                        <img class="w-100 h-100 object-fit-cover" src="{{ asset("front/images/backgrounds/empresa-video.png") }}" alt="">
+                        <img class="w-100 h-100 object-fit-cover rounded-20 box-shadow" src="{{ asset("front/images/backgrounds/empresa-video.png") }}" alt="">
                     </div>
                 </div>
                 <div class="col-12 gallery-wrapper position-relative">
