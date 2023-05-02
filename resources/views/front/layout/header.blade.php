@@ -44,34 +44,34 @@
     @livewireStyles
 </head>
 
-<body>
+<body id="body">
     <x-custom-code type="body" />
 
     <header class="header w-100 isolation-isolate {{ Route::is('home') ? 'position-absolute' : 'position-relative' }} w-100 top-0 start-0 w-100 py-2">
         <div class="container d-flex position-relative">
             <div class="row align-items-center w-100">
                 <div class="col-lg-2 m-auto justify-content-center d-none d-lg-flex">
-                    <a class="d-flex text-decoration-none {{ Route::is('home') ? 'header-link' : 'header-link2' }}" href="{{ route('company') }}" title="Página principal">
+                    <a class="p-20 p-400 d-flex text-decoration-none {{ Route::is('home') ? 'header-link' : 'header-link2' }}" href="{{ route('company') }}" title="Página principal">
                         O restaurante
                     </a>
                 </div>
                 <div class="col-lg-2 m-auto d-none d-lg-flex justify-content-center">
-                    <a class="d-flex text-decoration-none {{ Route::is('home') ? 'header-link' : 'header-link2' }}" href="{{ route('products') }}" title="Página principal">
+                    <a class="p-20 p-400 d-flex text-decoration-none {{ Route::is('home') ? 'header-link' : 'header-link2' }}" href="{{ route('products') }}" title="Página principal">
                         Buffet
                     </a>
                 </div>
                 <div class="col-lg-3 col-6 m-auto d-flex justify-content-lg-center justify-content-start">
                     <a class="d-flex header-logo" href="{{ route('home') }}" title="Página principal">
                         @if (Route::is("home") == true)
-                            <img class="w-100 h-100 object-fit-contain" src="{{ asset('front/images/logos/logo.png') }}" alt="Logo {{ env('APP_NAME') }}">
+                            <img class="w-100 h-100 object-fit-contain" src="{{ asset('front/images/logos/logoa.svg') }}" alt="Logo {{ env('APP_NAME') }}">
                         @else
-                            <img class="w-100 h-100 object-fit-contain" src="{{ asset('front/images/logos/logo2.png') }}" alt="Logo {{ env('APP_NAME') }}">
+                            <img class="w-100 h-100 object-fit-contain" src="{{ asset('front/images/logos/logov.svg') }}" alt="Logo {{ env('APP_NAME') }}">
                         @endif
                     </a>
                 </div>
                 <div class="col-lg-2 m-auto d-none d-lg-flex justify-content-center">
                         <div class="dropdown show2">
-                            <a class="text-decoration-none btn btn-secondary dropdown-toggle button-unstyled {{ Route::is('home') ? 'header-link' : 'header-link2' }} " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="p-20 p-400 text-decoration-none btn btn-secondary dropdown-toggle button-unstyled {{ Route::is('home') ? 'header-link' : 'header-link2' }} " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                               Eventos
                              <svg class="ms-0-50" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13 0.500001L7 6.5L1 0.5" stroke="white" stroke-width="1.4"/>
@@ -86,7 +86,7 @@
                           </div>
                 </div>
                 <div class="col-lg-2 m-auto d-none d-lg-flex justify-content-center">
-                    <a class="d-flex text-decoration-none {{ Route::is('home') ? 'header-link' : 'header-link2' }}" href="{{ route('contact') }}" title="Página principal">
+                    <a class="p-20 p-400 d-flex text-decoration-none {{ Route::is('home') ? 'header-link' : 'header-link2' }}" href="{{ route('contact') }}" title="Página principal">
                         Contato
                     </a>
                 </div>

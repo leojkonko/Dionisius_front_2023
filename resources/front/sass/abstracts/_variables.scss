@@ -65,14 +65,14 @@ $colors: ("blue": $blue,
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary: $purple;
+$primary: $yellow;
 $secondary: $gray-600;
 $success: $green;
 $info: $cyan;
 $warning: $yellow;
 $danger: $red;
 $light: $gray-100;
-$dark: $gray-900;
+$dark: #505050;
 $range: #D93A1A;
 // scss-docs-end theme-color-variables
 
@@ -381,6 +381,7 @@ $position-values: (0: 0,
     -50: -50%,
     40: 40%,
     -25: -25%,
+    5: 5%,
     -10: -10px,
     -15: -15px,
     -5: -5px,
@@ -540,6 +541,7 @@ $aspect-ratios: ("15x1": 75%,
     "6x9": calc(9 / 6 * 100%),
     "16x9": calc(9 / 16 * 100%),
     "21x9": calc(9 / 21 * 100%),
+    "30x9": calc(9 / 30 * 100%),
 );
 // scss-docs-end aspect-ratios
 // stylelint-enable function-disallowed-list

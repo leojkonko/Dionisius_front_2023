@@ -3,7 +3,7 @@
         <div class="row gy-2 gy-lg-0 text-center text-lg-start align-items-center justify-content-between py-2 py-lg-4">
             <div class="col-lg-4 d-flex justify-content-center align-items-center d-lg-none pt-1">
                 <a href="{{ route_lang('home') }}" class="d-block logo m-auto m-lg-0">
-                    <img class="object-fit-contain w-100 h-100" src="{{ asset('front/images/logos/logo.png') }}" title="Página principal" alt="Logo {{ env('APP_NAME') }}">
+                    <img class="object-fit-contain w-100 h-100" src="{{ asset('front/images/logos/logoa.svg') }}" title="Página principal" alt="Logo {{ env('APP_NAME') }}">
                 </a>
             </div>
             <div class="col-lg-2 d-flex justify-content-center align-items-center">
@@ -41,7 +41,7 @@
             </div>
             <div class="col-lg-4 d-flex justify-content-center align-items-center d-none d-lg-flex">
                 <a href="{{ route_lang('home') }}" class="d-block logo m-auto m-lg-0">
-                    <img class="object-fit-contain w-100 h-100" src="{{ asset('front/images/logos/logo.png') }}" title="Página principal" alt="Logo {{ env('APP_NAME') }}">
+                    <img class="object-fit-contain w-100 h-100" src="{{ asset('front/images/logos/logoa.svg') }}" title="Página principal" alt="Logo {{ env('APP_NAME') }}">
                 </a>
             </div>
             <div class="col-lg-4 d-flex justify-content-center align-items-center">
@@ -142,6 +142,18 @@
    
      offCanvas.on('hide.bs.offcanvas', function() { // Adiciona um listener para o evento "hide" do off canvas
        main.css('filter', ''); // Remove o estilo da tag main
+     });
+
+     const modal = $('#staticBackdrop'); // Seleciona o off canvas
+     const body = $('#body'); // Seleciona a tag body
+   
+     modal.on('show.bs.modal', function() { // Adiciona um listener para o evento "show" do off canvas
+     body.css('paddin-right', '0px'); // Adiciona o estilo à tag body
+       console.log('show event fired');
+     });
+   
+     modal.on('hide.bs.modal', function() { // Adiciona um listener para o evento "hide" do off canvas
+     body.css('paddin-right', ''); // Remove o estilo da tag main
      });
    });
    

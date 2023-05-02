@@ -56,7 +56,7 @@ new Swiper(".cardapio-swiper", {
 new Swiper(".casamento-swiper", {
     rewind: false,
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 30,
     navigation: {
         nextEl: ".casamento-swiper .swiper-button-next",
         prevEl: ".casamento-swiper .swiper-button-prev",

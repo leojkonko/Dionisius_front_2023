@@ -4,7 +4,7 @@
 
     <main id="empresa" class="row  overflow-hidden">
 
-        <section class="pb-lg-4 pb-3">
+        <section class="">
             <div class="container-start container">
                    <div class="row">
                      
@@ -41,7 +41,7 @@
                         </h2>
                     </div>
                     <div class="col-lg-8 d-flex justify-content-center align-items-center">
-                        <p class="p-16 text-white p-400 p-lg-2 text-lg-start text-center">
+                        <p class="p-16 text-white p-400 p-lg-1 text-lg-start text-center">
                             O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias 
                             desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas 
                             também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada.
@@ -49,7 +49,7 @@
                     </div>
                 </div>
             </div>
-            <svg class="position-absolute start-0 top-0" width="225" height="308" viewBox="0 0 225 308" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="position-absolute start-0 top-0 d-none d-lg-block" width="225" height="308" viewBox="0 0 225 308" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M-927.35 -319.936C-931.254 -323.834 -937.578 -323.834 -941.482 -319.936L-975.909 -285.562C-979.822 -281.655 -979.822 -275.315 -975.909 -271.409L-941.482 -237.034C-937.578 -233.136 -931.254 -233.136 -927.35 -237.034L-892.923 -271.409C-889.01 -275.315 -889.01 -281.655 -892.923 -285.562L-927.35 -319.936Z" stroke="white" stroke-opacity="0.3" stroke-width="2" stroke-miterlimit="10"/>
                 <path d="M-927.341 -196.36C-931.245 -200.258 -937.568 -200.258 -941.472 -196.36L-975.9 -161.985C-979.812 -158.079 -979.812 -151.739 -975.9 -147.832L-941.472 -113.458C-937.568 -109.56 -931.245 -109.56 -927.341 -113.458L-892.914 -147.832C-889.001 -151.739 -889.001 -158.079 -892.914 -161.985L-927.341 -196.36Z" stroke="white" stroke-opacity="0.3" stroke-width="2" stroke-miterlimit="10"/>
                 <path d="M-865.476 -258.152C-869.379 -262.05 -875.703 -262.05 -879.607 -258.152L-914.034 -223.778C-917.947 -219.871 -917.947 -213.531 -914.034 -209.625L-879.607 -175.25C-875.703 -171.352 -869.38 -171.352 -865.476 -175.25L-831.048 -209.625C-827.136 -213.531 -827.136 -219.871 -831.048 -223.778L-865.476 -258.152Z" stroke="white" stroke-opacity="0.3" stroke-width="2" stroke-miterlimit="10"/>
@@ -200,7 +200,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="ratio ratio-21x9">
-                            <img class="w-100 h-100 object-fit-cover rounded-20" src="{{ asset("front/images/backgrounds/empresa-video.png") }}" alt="">
+                            <img class="w-100 h-100 object-fit-cover rounded-20 box-shadow" src="{{ asset("front/images/backgrounds/empresa-video.png") }}" alt="">
                             <div class="w-100 h-100">
                                 <p class="positon-absolute top-50 start-50 position-absolute translate-middle w-80 h-80 bg-warning rounded-circle d-flex align-items-center justify-content-center">
                                     <svg width="40" height="46" viewBox="0 0 40 46" fill="none" xmlns="http://www.w3.org/2000/svg">

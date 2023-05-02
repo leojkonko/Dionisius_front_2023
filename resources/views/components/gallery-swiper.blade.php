@@ -26,7 +26,7 @@
             </a>
         @endif-->
 @foreach (range(0,5) as $item)
-            <a href="#" data-fancybox="gallery" class="d-block swiper-slide">
+            <a href="{{ asset("front/images/backgrounds/empresa-swiper.png") }}" data-fancybox="gallery" class="d-block swiper-slide" data-fancybox="gallery">
                 <div class="ratio ratio-15x1">
                     <img class="w-100 h-100 object-fit-cover rounded-20 box-shadow" src="{{ asset("front/images/backgrounds/empresa-swiper.png") }}" alt="">
                 </div>

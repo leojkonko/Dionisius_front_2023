@@ -30,12 +30,12 @@
                     </div>
                 @endforeach
             </div>
-            <div class="swiper-button-prev bg-laranja rounded-circle top-55">
+            <div class="swiper-button-prev bg-laranja rounded-circle top-55 start-5">
                 <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15 8L1 8M1 8L8 15M1 8L8 1" stroke="white" stroke-opacity="0.3" stroke-width="1.2"/>
                 </svg>                                    
             </div>
-            <div class="swiper-button-next bg-laranja rounded-circle top-55">
+            <div class="swiper-button-next bg-laranja rounded-circle top-55 end-5">
                 <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 8H14M14 8L7 1M14 8L7 15" stroke="white" stroke-width="1.2"/>
                 </svg>                    
