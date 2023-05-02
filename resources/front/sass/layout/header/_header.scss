@@ -1,0 +1,139 @@
+.header {
+    z-index: $zindex-header;
+
+    &-logo {
+        @include linear-rfs(10rem, 15rem, 375px, 1920px, "width");
+    }
+
+    .menu {
+        a {
+            padding: 0.25rem 0.75rem;
+            border-radius: $border-radius-sm;
+
+            &.active {
+                background-color: rgba($primary, 0.1);
+            }
+        }
+    }
+}
+
+.border-bottom {
+    border-bottom: 1px solid white;
+}
+
+.header-link {
+    color: white !important;
+
+    &:hover {
+        color: #FFAC30 !important;
+
+        & svg {
+            & path {
+                stroke: #FFAC30 !important;
+            }
+        }
+    }
+
+    &:focus {
+        color: #FFAC30 !important;
+
+        & svg {
+            & path {
+                stroke: #FFAC30 !important;
+            }
+        }
+    }
+
+    &:active {
+        color: #FFAC30 !important;
+
+        & svg {
+            & path {
+                stroke: #FFAC30 !important;
+            }
+        }
+    }
+
+    &:focus-visible {
+        color: #FFAC30 !important;
+
+        & svg {
+            & path {
+                stroke: #FFAC30 !important;
+            }
+        }
+    }
+}
+
+.header-link2 {
+    color: #303030 !important;
+
+    & svg {
+        & path {
+            stroke: #303030 !important;
+        }
+    }
+
+    &:hover {
+        color: #D53A1A !important;
+
+        & svg {
+            & path {
+                stroke: #D53A1A !important;
+            }
+        }
+    }
+
+    &:focus {
+        color: #D53A1A !important;
+
+        & svg {
+            & path {
+                stroke: #D53A1A !important;
+            }
+        }
+    }
+
+    &:active {
+        color: #D53A1A !important;
+
+        & svg {
+            & path {
+                stroke: #D53A1A !important;
+            }
+        }
+    }
+
+    &:focus-visible {
+        color: #D53A1A !important;
+
+        & svg {
+            & path {
+                stroke: #D53A1A !important;
+            }
+        }
+    }
+}
+
+.show-2 {
+    & .show {
+        color: #D53A1A !important;
+
+        & svg {
+            & path {
+                stroke: #D53A1A !important;
+            }
+        }
+    }
+
+}
+
+.bread {
+    a:hover {
+        color: #303030;
+    }
+
+    .bg-cinza-breadcrumb {
+        background: linear-gradient(90deg, #EAEAEA 0%, rgba(234, 234, 234, 0) 100%);
+    }
+}

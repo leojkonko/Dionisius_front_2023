@@ -1,0 +1,23 @@
+.mais-img {
+    position: relative;
+
+    &::after {
+        top: 0;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        @media(min-width: 576px) {
+            border-radius: 20px;
+        }
+
+        background: linear-gradient(0deg, rgba(80, 80, 80, 0.85), rgba(80, 80, 80, 0.85))
+    }
+
+}
+
+.transform-custom {
+    transform: translate(-50%, -50px);
+}

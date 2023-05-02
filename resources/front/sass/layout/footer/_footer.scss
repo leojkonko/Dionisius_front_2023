@@ -1,0 +1,56 @@
+.espaco-footer {
+    padding-bottom: 6rem;
+}
+
+#footer {
+    background-image: url(../../front/images/backgrounds/footer.png);
+    background-size: cover;
+    background-position-y: 100%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    margin-top: -4rem;
+    position: relative;
+    z-index: 2;
+
+    .logo {
+        @include linear-rfs(10rem, 15rem, 375px, 1920px, "width");
+    }
+
+    .address {
+        width: 100%;
+    }
+
+    .copyright {
+        border-top: 1px solid rgba($black, 0.1);
+    }
+
+
+
+    .redes-sociais {
+        & a {
+            &:hover {
+                border: 1px solid white !important;
+
+                & svg {
+                    & path {
+                        fill: white;
+                    }
+                }
+            }
+        }
+    }
+
+    & .infos:hover {
+        & svg {
+            & path {
+                fill: white;
+            }
+        }
+    }
+}
+
+.text-decoration-none {
+    &:hover {
+        color: #eaeaea;
+    }
+}

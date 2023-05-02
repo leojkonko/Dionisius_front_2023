@@ -1,0 +1,67 @@
+html {
+    overflow-x: hidden;
+}
+
+.banner {
+    & .conteudo-banner {
+        transform: translate(-50%, 0%);
+    }
+
+    & .banner-swiper {}
+}
+
+.cardapio {
+    & .bg-orange {
+        background: linear-gradient(264.58deg, #F55B3C 0%, #D93A1A 100%);
+        border-radius: 20px;
+    }
+
+    & .rotate {
+        animation: spin 10s linear infinite;
+
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+    }
+}
+
+.casamento {
+    & .swiper {
+        overflow: revert;
+        //overflow-x: hidden !important;
+    }
+
+    & .casamento-swiper {
+        overflow-x: clip !important;
+        position: initial;
+        //overflow: inherit !important;
+    }
+
+    & .ratio-casamento {
+        height: 100%;
+    }
+
+    & .casamento-img-front {
+        //width: 114%;
+        top: -14%;
+        height: 114%;
+    }
+}
+
+.restaurante {
+    & .ratio-95 {
+        @media(min-width: 992px) {
+            width: 95% !important;
+            display: flex;
+            margin-left: auto;
+        }
+    }
+}
