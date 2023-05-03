@@ -47,7 +47,7 @@
 <body id="body">
     <x-custom-code type="body" />
 
-    <header class="header w-100 isolation-isolate {{ Route::is('home') ? 'position-absolute' : 'position-relative' }} w-100 top-0 start-0 w-100 py-2">
+    <header class="header w-100 isolation-isolate overflow-hidden {{ Route::is('home') ? 'position-absolute' : 'position-relative' }} w-100 top-0 start-0 w-100 py-2">
         <div class="container d-flex position-relative">
             <div class="row align-items-center w-100">
                 <div class="col-lg-2 m-auto justify-content-center d-none d-lg-flex">
