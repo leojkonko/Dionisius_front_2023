@@ -201,7 +201,7 @@
 <section class="casamento pb-lg-4 pb-3">
     <div class="container">
         <div class="row g-0">
-            <div class="col-lg-6 d-flex bg-white justify-content-lg-start justify-content-center align-items-center flex-column rounded-20-left">
+            <div class="col-lg-6 d-flex bg-white justify-content-lg-start justify-content-center align-items-center flex-column rounded-20-left rounded-20-top">
                 <div class="p-lg-3 p-xl-4 p-2 text-lg-start text-center">
                     <h2 class="h2 p-400 text-success w-100 text-lg-start text-center">Casamentos</h2>
                     <p class="p-16 p-400">Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria.</p>
@@ -247,7 +247,7 @@
                         <?php foreach(range(0,9) as $i) : ?>
                             <div class="swiper-slide">
                                 <div class="ratio ratio-15x1 ratio-casamento">
-                                    <img class="w-100 h-100 object-fit-cover rounded-20-right" src="{{ asset("front/images/backgrounds/casamento_.png") }}" alt="">
+                                    <img class="w-100 h-100 object-fit-cover rounded-20-right rounded-20-bottom" src="{{ asset("front/images/backgrounds/casamento_.png") }}" alt="">
                                     <img class="w-100 h-100 object-fit-cover casamento-img-front" src="{{ asset("front/images/backgrounds/casamento.png") }}" alt="">
                                 </div>
                             </div>
