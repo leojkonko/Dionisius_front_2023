@@ -9,16 +9,16 @@
             <div class="col-lg-2 d-flex justify-content-center align-items-center">
                 <ul class="list-unstyled">
                     <li class="mt-1">
-                        <a href="" class="text-decoration-none text-white p-16 p-400">O restaurante</a>
+                        <a href="{{ route('company') }}" class="text-decoration-none text-white p-16 p-400">O restaurante</a>
                     </li>
                     <li class="mt-1">
-                        <a href="" class="text-decoration-none text-white p-16 p-400">Buffet</a>
+                        <a href="{{ route('products') }}" class="text-decoration-none text-white p-16 p-400">Buffet</a>
                     </li>
                     <li class="mt-1">
-                        <a href="" class="text-decoration-none text-white p-16 p-400">Eventos</a>
+                        <a href="{{ route('event') }}" class="text-decoration-none text-white p-16 p-400">Eventos</a>
                     </li>
                     <li class="mt-1">
-                        <a href="" class="text-decoration-none text-white p-16 p-400">Contato</a>
+                        <a href="{{ route('contact') }}" class="text-decoration-none text-white p-16 p-400">Contato</a>
                     </li>
                 </ul>
             </div>
