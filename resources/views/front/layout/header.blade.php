@@ -90,7 +90,7 @@
                         Contato
                     </a>
                 </div>
-                <div class="col-6 m-auto d-flex d-lg-none justify-content-end">
+                <div class="col-4 m-auto d-flex d-lg-none justify-content-end">
                     {{-- Botão mobile --}}
                     <button class="d-lg-none btn p-0 {{ Route::is('home') ? 'btn-outline-light' : 'btn-outline-laranja' }}  p-0-50" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                         <svg class="w-1-50 h-1-50" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
