@@ -26,7 +26,7 @@
                 </nav>
             </div>
             <div class="col-lg-8">
-                <div class="ratio ratio-30x9">
+                <div class="ratio ratio-21x9 ratio-sm-30x9">
                     <div class="col-lg-4 d-flex justify-content-center align-items-center z-index-1 d-lg-none">
                         <nav aria-label="breadcrumb" class=" flex-column gap-0-50">
                             @if ($site->getBreadTitle())
