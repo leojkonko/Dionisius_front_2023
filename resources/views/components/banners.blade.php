@@ -8,7 +8,7 @@
                         <picture>
                             {{-- Desktop --}}
                             <source srcset="{{ asset("front/images/backgrounds/banner.png") }}" media="(min-width: 767px)">
-                                <div class="conteudo-banner position-absolute top-50 start-50 text-center w-100">
+                                <div class="conteudo-banner position-absolute top-40 top-sm-50 start-50 text-center w-100">
                                     <h2 class="text-white h2 p-400">Conheça nosso incrível buffet</h2>
                                     <p class="text-white mt-1 p-16 p-400">Variedade, qualidade e muito sabor!</p>
                                     <button class="btn btn-outline-light mt-1 p-16 p-400">Saiba mais
