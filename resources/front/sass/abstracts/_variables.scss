@@ -69,7 +69,7 @@ $primary: $yellow;
 $secondary: $gray-600;
 $success: $green;
 $info: $cyan;
-$warning: $yellow;
+$warning: #FFAC30;
 $danger: $red;
 $light: $gray-100;
 $dark: #505050;
@@ -379,12 +379,14 @@ $position-values: (0: 0,
     55: 55%,
     -75: -75%,
     -50: -50%,
+    45: 45%,
     40: 40%,
     -25: -25%,
     5: 5%,
     -10: -10px,
     -15: -15px,
     -5: -5px,
+    80: 80px,
     //   100: 100%
 );
 // scss-docs-end position-map

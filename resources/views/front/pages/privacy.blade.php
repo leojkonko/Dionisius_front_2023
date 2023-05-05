@@ -11,7 +11,7 @@
                     <div class="row">
                         <div class="col-lg-12 conteudo d-flex align-items-center py-4 py-sm-4 py-md-4 py-lg-0 py-xl-0 py-xxl-0">
                             <div class="row">
-                                <div class="col-12 p px-xl-4 px-lg-2 ">
+                                <div class="col-12 p-16 p-400">
                                     {!! $page->text !!}
 
                                     @if ($site->useLgpd())

@@ -19,6 +19,10 @@ html {
     & .rotate {
         animation: spin 10s linear infinite;
 
+        @media(max-width: 992px) {
+            margin-top: -20px;
+        }
+
         @media(max-width: 450px) {
             width: 300px;
         }

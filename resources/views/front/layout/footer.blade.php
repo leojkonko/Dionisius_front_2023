@@ -155,8 +155,7 @@
      modal.on('hide.bs.modal', function() { // Adiciona um listener para o evento "hide" do off canvas
      body.css('paddin-right', ''); // Remove o estilo da tag main
      });
-   });
-   
+})
    
    </script>
 </body>

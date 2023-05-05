@@ -26,15 +26,15 @@
                 </nav>
             </div>
             <div class="col-lg-8">
-                <div class="ratio ratio-21x9 ratio-sm-30x9">
+                <div class="ratio ratio-21x9 ratio-sm-35x9">
                     <div class="col-lg-4 d-flex justify-content-center align-items-center z-index-1 d-lg-none">
                         <nav aria-label="breadcrumb" class=" flex-column gap-0-50">
                             @if ($site->getBreadTitle())
-                                <h1 class="h2 p-400 text-success mb-0">
+                                <h1 class="h2 p-400 text-success mb-0 w-100 text-center text-lg-start">
                                     {{ $site->getBreadTitle() }}
                                 </h1>
                             @endif
-                            <ul class="breadcrumb ps-lg-0-25">
+                            <ul class="breadcrumb ps-lg-0-25 d-flex justify-content-center justify-content-lg-start">
                                 @foreach ($site->getBreadCrumbs() as $bread)
                                     @if ($loop->last)
                                         <li class="breadcrumb-item active text-secondary" aria-current="{{ $bread->getText() }}">{{ $bread->getText() }}</li>

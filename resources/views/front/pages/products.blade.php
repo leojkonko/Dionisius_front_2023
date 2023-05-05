@@ -18,7 +18,7 @@
         </section>
         <section class="pt-lg-4 pt-3 espaco-footer overflow-hidden">
             <div class="container">
-                <div class="row gx-0 gx-sm-2">
+                <div class="row gx-1">
                     @php
                         $var = 0
                     @endphp
@@ -28,16 +28,16 @@
                                 $var++
                             @endphp
                             <a href="{{ asset("front/images/backgrounds/empresa-swiper.png") }}" data-fancybox="gallery">
-                                <div class="ratio ratio-15x1 my-sm-1">
+                                <div class="ratio ratio-15x1 my-0-50">
                                     <img class="w-100 h-100 object-fit-cover rounded-20 box-shadow" src="{{ asset("front/images/backgrounds/empresa-swiper.png") }}" alt="">
                                 </div>
                             </a>
                         </div>
                     @endforeach
                     <div class="col-lg-4 col-6 rounded-20">
-                        <div class="ratio ratio-15x1 my-sm-1 mais-img" data-fancybox="gallery">
+                        <div class="ratio ratio-15x1 my-0-50 mais-img" data-fancybox="gallery">
                                 <div class=" w-100 h-100 z-index-1 ">
-                                    <a href="{{ asset("front/images/backgrounds/empresa-swiper.png") }}" data-fancybox="gallery" class="w-100 h-100  text-decoration-none position-absolute">
+                                    <a href="{{ asset("front/images/backgrounds/empresa-swiper.png") }}" data-fancybox="gallery" class="w-100 h-100 rounded-20 text-decoration-none position-absolute">
                                         <p class="text-white top-50 start-50 position-absolute text-center transform-custom p-24 p-400 w-100">
                                             <span class="p-28">+4</span> <br> Veja mais
                                         </p>
@@ -49,7 +49,7 @@
                 </div>
             </div>
             
-                <svg class="position-absolute bottom--75 start-0 z-index-background" width="1920" height="956" viewBox="0 0 1920 956" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="position-absolute bottom--50 start-0 z-index-background" width="1920" height="956" viewBox="0 0 1920 956" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M-145.503 3.93241C-149.407 0.0344319 -155.731 0.0344296 -159.635 3.93241L-194.062 38.3069C-197.975 42.2133 -197.975 48.5534 -194.062 52.4599L-159.635 86.8343C-155.731 90.7323 -149.407 90.7323 -145.503 86.8343L-111.076 52.4599C-107.163 48.5534 -107.163 42.2134 -111.076 38.3069L-145.503 3.93241Z" stroke="#505050" stroke-opacity="0.2" stroke-width="2" stroke-miterlimit="10"/>
                     <path d="M-145.494 127.509C-149.398 123.611 -155.721 123.611 -159.625 127.509L-194.053 161.884C-197.965 165.79 -197.965 172.13 -194.053 176.037L-159.625 210.411C-155.721 214.309 -149.398 214.309 -145.494 210.411L-111.067 176.037C-107.154 172.13 -107.154 165.79 -111.067 161.884L-145.494 127.509Z" stroke="#505050" stroke-opacity="0.2" stroke-width="2" stroke-miterlimit="10"/>
                     <path d="M-83.6286 65.7165C-87.5325 61.8185 -93.8558 61.8185 -97.7598 65.7165L-132.187 100.091C-136.1 103.997 -136.1 110.338 -132.187 114.244L-97.7598 148.618C-93.8558 152.516 -87.5325 152.516 -83.6286 148.618L-49.2011 114.244C-45.2886 110.338 -45.2886 103.997 -49.2011 100.091L-83.6286 65.7165Z" stroke="#505050" stroke-opacity="0.2" stroke-width="2" stroke-miterlimit="10"/>

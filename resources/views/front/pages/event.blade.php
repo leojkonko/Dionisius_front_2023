@@ -1,7 +1,32 @@
 @extends('front.layout.app')
 
 @section('content')
-
+ <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        
+    <div class="modal-content">
+        
+        <button type="button" class="btn-close top-5 position-absolute end-5" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="container p-0 mw-100">
+            <div class="row justify-content-center gy-2 gy-lg-0 gx-lg-3">
+                <div class="col-lg-12">
+                    <div class="formulario bg-white shadow-lg rounded-3 p-2 rounded-20">
+                        <h2 class="h1 text-primary fw-bold text-center h2 p-400 text-laranja">Entre em contato</h2>
+                        <p class="text-center mb-2 p-16 p-400">Preencha o formulário e nossa equipe vai retornar o quanto antes!</p>
+                        <livewire:form-contact />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+        </div>-->
+    </div>
+    </div>
+</div>  
+<!-- modal -->
 <main id="eventos" class="bg-cinza">
     <section class="bg-white">
         <div class="container-end container">
@@ -35,8 +60,8 @@
         <div class="container">
             <div class="row g-0">
                 <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column">
-                    <div class="p-lg-3 p-2 pe-lg-4">
-                        <h2 class="h2 p-400 text-success">Depoimentos</h2>
+                    <div class="p-lg-3 p-2 pe-lg-4 text-lg-start text-center">
+                        <h2 class="h2 p-400 text-success w-100 text-lg-start text-center">Depoimentos</h2>
                         <p class="p-400 p-16">Leia os comentários de quem realizou
                             seu evento no espaço da Sica e teve suas
                             expectativas superadas.</p>
@@ -48,7 +73,7 @@
                         <?php foreach(range(0,9) as $i) : ?>
                             <div class="swiper-slide">
                                 <div class="row g-0 ">
-                                    <div class="col-lg-8 d-flex bg-white justify-content-lg-start justify-content-center align-items-center flex-column rounded-20-left box-shadow">
+                                    <div class="col-lg-8 d-flex bg-white justify-content-lg-start justify-content-center align-items-center flex-column rounded-20-left rounded-20-top box-shadow">
                                         <div class="p-lg-3 p-xl-4 p-2 text-lg-start text-center position-relative">
                                             <p class="p-16 p-400">O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.
                                             </p>
@@ -63,7 +88,7 @@
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="ratio ratio-1x1 ratio-casamento">
-                                            <img class="w-100 h-100 object-fit-cover rounded-20-right box-shadow" src="{{ asset("front/images/backgrounds/eventos.png") }}" alt="">
+                                            <img class="w-100 h-100 object-fit-cover rounded-20-right rounded-20-bottom box-shadow" src="{{ asset("front/images/backgrounds/eventos.png") }}" alt="">
                                         </div>
                                     </div> 
                                 </div>
@@ -88,36 +113,6 @@
             <button class="btn btn-outline-warning text-dark mt-1 p-16 p-400 me-lg-auto me-0 mb-2 mb-lg-0" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Tenho interesse                                       
             </button>      
-  
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel"></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                        <div class="modal-body">
-                            <div class="container py-2">
-                                <div class="row justify-content-center gy-2 gy-lg-0 gx-lg-3">
-                                    <div class="col-lg-12">
-                                        <div class="formulario bg-white shadow-lg rounded-3 p-2 rounded-20">
-                                            <h2 class="h1 text-primary fw-bold text-center h2 p-400 text-laranja">Entre em contato</h2>
-                                            <p class="text-center mb-2 p-16 p-400">Preencha o formulário e nossa equipe vai retornar o quanto antes!</p>
-                                            <livewire:form-contact />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <!--<div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Understood</button>
-                    </div>-->
-                </div>
-                </div>
-            </div>  
-            <!-- modal -->
         </div>
     </section>
     <section class="fotos py-lg-4 py-3 espaco-footer">
@@ -127,7 +122,7 @@
                     <div class="ratio ratio-21x9">
                         <img class="w-100 h-100 object-fit-cover rounded-20 box-shadow" src="{{ asset("front/images/backgrounds/empresa-video.png") }}" alt="">
                         <div class="w-100 h-100">
-                            <p class="positon-absolute top-50 start-50 position-absolute translate-middle w-80 h-80 bg-warning rounded-circle d-flex align-items-center justify-content-center">
+                            <p class="positon-absolute top-45 start-50 position-absolute translate-middle w-80 h-80 bg-warning rounded-circle d-flex align-items-center justify-content-center">
                                 <svg width="40" height="46" viewBox="0 0 40 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M37.5 20.4019C39.5 21.5566 39.5 24.4434 37.5 25.5981L6 43.7846C4 44.9393 1.5 43.4959 1.5 41.1865L1.5 4.81346C1.5 2.50406 4 1.06069 6 2.21539L37.5 20.4019Z" stroke="white" stroke-width="2"></path>
                                 </svg>                                        

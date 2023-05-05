@@ -1,7 +1,6 @@
 .header {
     //z-index: $zindex-header;
     z-index: 2;
-    overflow: hidden;
 
     &-logo {
         @include linear-rfs(10rem, 15rem, 375px, 1920px, "width");

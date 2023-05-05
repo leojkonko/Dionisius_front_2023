@@ -47,8 +47,8 @@
 <body id="body">
     <x-custom-code type="body" />
 
-    <header class="header w-100 isolation-isolate overflow-hidden {{ Route::is('home') ? 'position-absolute' : 'position-relative' }} w-100 top-0 start-0 w-100 py-2">
-        <div class="container d-flex position-relative">
+    <header class="header w-100 isolation-isolate overflow-x-clip {{ Route::is('home') ? 'position-absolute' : 'position-relative' }} w-100 top-0 start-0 w-100 py-2">
+        <div class="container d-flex position-relative justify-content-center max-width-100">
             <div class="row align-items-center w-100">
                 <div class="col-lg-2 m-auto justify-content-center d-none d-lg-flex">
                     <a class="p-20 p-400 d-flex text-decoration-none {{ Route::is('home') ? 'header-link' : 'header-link2' }}" href="{{ route('company') }}" title="Página principal">
@@ -60,7 +60,7 @@
                         Buffet
                     </a>
                 </div>
-                <div class="col-lg-3 col-6 m-auto d-flex justify-content-lg-center justify-content-start">
+                <div class="col-lg-3 col-12 justify-content-start justify-content-lg-center d-flex align-items-center">
                     <a class="d-flex header-logo" href="{{ route('home') }}" title="Página principal">
                         @if (Route::is("home") == true)
                             <img class="w-100 h-100 object-fit-contain" src="{{ asset('front/images/logos/logoa.svg') }}" alt="Logo {{ env('APP_NAME') }}">
@@ -68,6 +68,13 @@
                             <img class="w-100 h-100 object-fit-contain" src="{{ asset('front/images/logos/logov.svg') }}" alt="Logo {{ env('APP_NAME') }}">
                         @endif
                     </a>
+                    {{-- Botão mobile --}}
+                    <button class="ms-auto d-lg-none btn p-0 {{ Route::is('home') ? 'btn-outline-light' : 'btn-outline-laranja' }}  p-0-50" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <svg class="w-1-50 h-1-50" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
+                        stroke="{{ Route::is('home') ? '#FFAC30' : '#D93A1A' }}">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
                 </div>
                 <div class="col-lg-2 m-auto d-none d-lg-flex justify-content-center">
                         <div class="dropdown show2">
@@ -89,15 +96,6 @@
                     <a class="p-20 p-400 d-flex text-decoration-none {{ Route::is('home') ? 'header-link' : 'header-link2' }}" href="{{ route('contact') }}" title="Página principal">
                         Contato
                     </a>
-                </div>
-                <div class="col-4 m-auto d-flex d-lg-none justify-content-end">
-                    {{-- Botão mobile --}}
-                    <button class="d-lg-none btn p-0 {{ Route::is('home') ? 'btn-outline-light' : 'btn-outline-laranja' }}  p-0-50" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                        <svg class="w-1-50 h-1-50" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
-                        stroke="{{ Route::is('home') ? '#FFAC30' : '#D93A1A' }}">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                    </button>
                 </div>
             </div>
         </div>

@@ -28,6 +28,26 @@ main {
     }
 }
 
+.p-14 {
+    font-size: 14px;
+    line-height: 25px;
+
+    @media(max-width: 1600px) {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+.p-12 {
+    font-size: 12px;
+    line-height: 25px;
+
+    @media(max-width: 1600px) {
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+
 .p-20 {
     font-size: 18px;
     line-height: 25px;
@@ -77,6 +97,18 @@ main {
     }
 }
 
+.h2-25 {
+    font-family: 'Lora' !important;
+    font-style: italic !important;
+    font-size: 24px !important;
+    line-height: 24px !important;
+
+    @media(max-width: 992px) {
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+}
+
 .btn:hover {
     & svg {
         & path {
@@ -118,4 +150,28 @@ main {
 .pm-1 {
     padding: 1rem;
     margin: -1rem;
+}
+
+.overflow-x-clip {
+    overflow-x: clip !important;
+}
+
+.corte-img {
+    @media(min-width: 992px) {
+        clip-path: inset(-50px 0px 27px 0px);
+    }
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.border-left {
+    border-left: 1px solid #e9e0e0;
+}
+
+.max-width-100 {
+    @media(max-width: 576px) {
+        max-width: 100% !important;
+    }
 }
